@@ -13,7 +13,7 @@ import { formatYearMoth } from '../../utils/helper';
 import ContactInfo from '../ResumeSections/ContactInfo';
 import EducationInfo from '../ResumeSections/EducationInfo';
 import LanguageSection from '../ResumeSections/LanguageSection';
-import WorkExperience from '../ResumeSections/workExperience';
+import WorkExperience from '../ResumeSections/WorkExperience';
 import ProjectInfo from '../ResumeSections/ProjectInfo';
 import SkillSection from '../ResumeSections/SkillSection';
 import CertificationInfo from '../ResumeSections/CertificationInfo';
