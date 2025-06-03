@@ -5,7 +5,7 @@ import LandingPage from './pages/LandingPage';
 import Dashboard from './pages/Home/Dashboard';
 import EditResume from './pages/ResumeUpdate/EditResume';
 import UserProvider from './context/userContext';
-import { Analytics } from "@vercel/analytics/next"
+
 
 const App = () => {
   return (
