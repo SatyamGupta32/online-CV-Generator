@@ -47,7 +47,7 @@ const LandingPage = () => {
           <div className='w-full md:w-1/2 pr-4 mb-8 md:mb-0'>
             <h1 className='text-5xl font-bold mb-6 leading-tight'>
               Build Your
-              <span className='text-transparent
+              <span className='text-transparent ml-2
               bg-clip-text bg-[radial-gradient(circle,_#7182ff_0%,_#3cff52_100%)]
               bg-[length:200%_200%] animate-text-shine
               '>
