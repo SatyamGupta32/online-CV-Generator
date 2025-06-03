@@ -2,75 +2,95 @@
 
 A full-stack web application for creating and managing professional resumes online. Built with React.js for the frontend and Node.js/Express.js for the backend.
 
-## Detailed Project Structure
+## Project Structure
 
 ```
-├── client/                          # Frontend React application
-│   ├── public/                     # Public assets
-│   │   ├── index.html            # HTML entry point
-│   │   └── assets/              # Static assets (images, fonts)
-│   ├── src/                      # Source files
-│   │   ├── assets/              # Frontend assets
-│   │   │   ├── images/         # Image assets
-│   │   │   └── styles/        # Style assets
-│   │   ├── components/         # Reusable React components
-│   │   │   ├── Cards/        # Card components
-│   │   │   ├── Inputs/       # Form input components
-│   │   │   ├── layouts/      # Layout components
-│   │   │   ├── ResumeSections/ # Resume section components
-│   │   │   ├── ResumeTemplates/ # Resume template components
-│   │   │   ├── Modal.jsx    # Modal component
-│   │   │   ├── Progress.jsx # Progress indicator
-│   │   │   ├── StepProgress.jsx # Step progress component
-│   │   │   └── Tab.jsx     # Tab component
-│   │   ├── context/           # React Context providers
-│   │   │   ├── AuthContext.jsx # Authentication context
-│   │   │   └── ResumeContext.jsx # Resume data context
-│   │   ├── pages/             # Page components
-│   │   │   ├── Auth/        # Authentication pages
+├── client/                             # Frontend React application
+│   ├── public/                         # Public assets
+│   │   ├── index.html
+│   │   └── assets/                     # Static assets
+│   ├── src/                            # Source files
+│   │   ├── assets/                     # Frontend assets
+│   │   │   └── images/                 # Image assets
+│   │   ├── components/                 # Reusable React components
+│   │   │   ├── Cards/                  # Card components
+│   │   │   │   ├── ResumeCard.jsx
+│   │   │   │   └── ProfileCard.jsx
+│   │   │   ├── Inputs/                 # Form input components
+│   │   │   │   ├── TextInput.jsx
+│   │   │   │   ├── SelectInput.jsx
+│   │   │   │   └── FileInput.jsx
+│   │   │   ├── layouts/                # Layout components
+│   │   │   │   ├── Header.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   └── Sidebar.jsx
+│   │   │   ├── ResumeSections/         # Resume section components
+│   │   │   │   ├── Education.jsx
+│   │   │   │   ├── Experience.jsx
+│   │   │   │   ├── Skills.jsx
+│   │   │   │   └── Projects.jsx
+│   │   │   ├── ResumeTemplates/        # Resume template components
+│   │   │   │   ├── Modern.jsx
+│   │   │   │   ├── Classic.jsx
+│   │   │   │   └── Professional.jsx
+│   │   │   ├── Modal.jsx
+│   │   │   ├── Progress.jsx
+│   │   │   ├── StepProgress.jsx
+│   │   │   └── Tab.jsx
+│   │   ├── context/                    # React Context providers
+│   │   │   ├── AuthContext.jsx
+│   │   │   └── ResumeContext.jsx
+│   │   ├── pages/                      # Page components
+│   │   │   ├── Auth/                   # Authentication pages
 │   │   │   │   ├── Login.jsx
 │   │   │   │   └── Register.jsx
-│   │   │   ├── Home/       # Home page components
-│   │   │   ├── ResumeUpdate/ # Resume editing pages
-│   │   │   └── LandingPage.jsx # Landing page
-│   │   ├── utils/            # Utility functions
-│   │   │   ├── api.js      # API utility functions
-│   │   │   ├── constants.js # Constants and configurations
-│   │   │   └── helpers.js  # Helper functions
-│   │   ├── App.jsx         # Main application component
-│   │   ├── main.jsx       # Application entry point
-│   │   └── index.css      # Global styles
-│   ├── .eslintrc.js       # ESLint configuration
-│   ├── vite.config.js     # Vite configuration
-│   └── package.json       # Frontend dependencies and scripts
+│   │   │   ├── Home/                   # Home section
+│   │   │   │   └── Home.jsx
+│   │   │   ├── ResumeUpdate/           # Resume update section
+│   │   │   │   ├── CreateResume.jsx
+│   │   │   │   └── EditResume.jsx
+│   │   │   └── LandingPage.jsx
+│   │   ├── utils/                      # Utility functions
+│   │   │   ├── api.js
+│   │   │   ├── constants.js
+│   │   │   └── helpers.js
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   ├── .eslintrc.js
+│   ├── vite.config.js
+│   └── package.json
 │
-├── server/                          # Backend Node.js/Express application
-│   ├── config/                    # Configuration files
-│   │   ├── db.js               # Database configuration
-│   │   └── config.js          # Application configuration
-│   ├── controllers/             # Route controllers
-│   │   ├── authController.js  # Authentication controller
-│   │   ├── resumeController.js # Resume controller
-│   │   └── userController.js  # User management controller
-│   ├── middlewares/            # Express middlewares
-│   │   ├── auth.js           # Authentication middleware
-│   │   ├── errorHandler.js   # Error handling middleware
-│   │   └── upload.js        # File upload middleware
-│   ├── models/               # Database models
-│   │   ├── Resume.js       # Resume model
-│   │   └── User.js        # User model
-│   ├── routes/              # API routes
-│   │   ├── auth.js        # Authentication routes
-│   │   ├── resume.js      # Resume management routes
-│   │   └── user.js       # User management routes
-│   ├── uploads/            # File upload directory
-│   │   └── images/       # Uploaded images
-│   ├── utils/             # Utility functions
-│   │   ├── validation.js # Input validation
-│   │   └── helpers.js   # Helper functions
-│   ├── .env              # Environment variables
-│   ├── server.js         # Server entry point
-│   └── package.json      # Backend dependencies and scripts
+├── server/                             # Backend Node.js/Express application
+│   ├── config/                         # Configuration files
+│   │   ├── db.js
+│   │   └── config.js
+│   ├── controllers/                    # API controllers
+│   │   ├── authController.js
+│   │   ├── resumeController.js
+│   │   └── userController.js
+│   ├── middlewares/                    # Express middlewares
+│   │   ├── auth.js
+│   │   ├── errorHandler.js
+│   │   └── upload.js
+│   ├── models/                         # Database models
+│   │   ├── Resume.js
+│   │   └── User.js
+│   ├── routes/                         # API routes
+│   │   ├── auth.js
+│   │   ├── resume.js
+│   │   └── user.js
+│   ├── uploads/                        # File upload directory
+│   │   └── images-1.png                # uploaded image
+│   ├── utils/                          # Utility functions
+│   │   ├── validation.js
+│   │   └── helpers.js
+│   ├── .env
+│   ├── server.js
+│   └── package.json
+│
+├── .gitignore
+└── README.md
 ```
 
 ## Dependencies and Libraries
