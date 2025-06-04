@@ -5,6 +5,7 @@ const path = require('path');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
 const resumeRoutes = require('./routes/resumeRoutes'); // Uncomment if you have resume routes
+const router = express.Router();
 
 const app = express();
 app.set('trust proxy', true);
@@ -36,6 +37,11 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads'),
         }
     }
 ));
+
+
+router.get('/hello', (req, res) => {
+  res.json({ message: 'Hello from backend!' });
+});
 
 // start server
 const PORT = process.env.PORT || 5000;
