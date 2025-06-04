@@ -7,7 +7,7 @@ const authRoutes = require('./routes/authRoutes');
 const resumeRoutes = require('./routes/resumeRoutes'); // Uncomment if you have resume routes
 
 const app = express();
-
+app.set('trust proxy', true);
 // Middleware to handle CORS
 app.use(
     cors({
