@@ -14,6 +14,7 @@ const generateToken = (userId) => {
 // @access Public
 
 const registerUser = async (req, res) => {
+    console.log(req.body); 
     const { name, email, password, profileImageUrl } = req.body;
 
     try {

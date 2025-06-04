@@ -49,7 +49,7 @@ const SignUp = ({ setCurrentPage }) => {
         name,
         email,
         password, 
-        profileImageUrl: profilePicUrl
+        profileImageUrl: profilePicUrl || 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png'
       });
 
       const { token } = response.data;
