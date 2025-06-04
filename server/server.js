@@ -4,8 +4,7 @@ const cors = require('cors');
 const path = require('path');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
-const resumeRoutes = require('./routes/resumeRoutes'); // Uncomment if you have resume routes
-const router = express.Router();
+const resumeRoutes = require('./routes/resumeRoutes'); // Uncomment if you have resume routes 
 
 const app = express();
 app.set('trust proxy', true);
@@ -39,7 +38,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads'),
 ));
 
 
-router.get('/', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ message: 'Hello from backend!' });
 });
 
