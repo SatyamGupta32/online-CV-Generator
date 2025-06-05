@@ -39,7 +39,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads'),
 
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Hello from backend!' });
+  res.send({ message: 'Hello from backend!' });
 });
 
 // start server
