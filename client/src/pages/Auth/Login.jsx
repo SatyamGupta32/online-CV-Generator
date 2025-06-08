@@ -63,7 +63,7 @@ const Login = ({ setCurrentPage }) => {
           label='Email Address'
           placeholder='john@example.com'
           type='text'
-          autocomplete="current-password"
+          autoComplete="current-password"
         />
 
         <Input
