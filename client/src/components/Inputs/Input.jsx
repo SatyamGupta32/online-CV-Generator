@@ -31,7 +31,7 @@ const Input = ({ value, onChange, label, placeholder, type , autoComplete}) => {
                         {showPassword ? (
                             <FaRegEye
                                 size={22}
-                                className='tex-primary cursor-pointer'
+                                className='text-primary cursor-pointer'
                                 onClick={togglrShowPassword}
                             />
                         ) : (
