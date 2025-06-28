@@ -276,7 +276,7 @@ POST /api/upload
 
 1. Clone the repository
 ```bash
-git clone [[repository-url]](https://github.com/SatyamGupta32/online-CV-Generator.git)
+git clone https://github.com/SatyamGupta32/online-CV-Generator.git
 cd Online-Resume-Maker
 ```
 
