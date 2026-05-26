@@ -11,49 +11,24 @@ A full-stack web application for creating and managing professional resumes onli
 │   │   └── assets/                     # Static assets
 │   ├── src/                            # Source files
 │   │   ├── assets/                     # Frontend assets
-│   │   │   └── images/                 # Image assets
-│   │   ├── components/                 # Reusable React components
-│   │   │   ├── Cards/                  # Card components
-│   │   │   │   ├── ResumeCard.jsx
-│   │   │   │   └── ProfileCard.jsx
-│   │   │   ├── Inputs/                 # Form input components
-│   │   │   │   ├── TextInput.jsx
-│   │   │   │   ├── SelectInput.jsx
-│   │   │   │   └── FileInput.jsx
-│   │   │   ├── layouts/                # Layout components
-│   │   │   │   ├── Header.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   └── Sidebar.jsx
-│   │   │   ├── ResumeSections/         # Resume section components
-│   │   │   │   ├── Education.jsx
-│   │   │   │   ├── Experience.jsx
-│   │   │   │   ├── Skills.jsx
-│   │   │   │   └── Projects.jsx
-│   │   │   ├── ResumeTemplates/        # Resume template components
-│   │   │   │   ├── Modern.jsx
-│   │   │   │   ├── Classic.jsx
-│   │   │   │   └── Professional.jsx
+│   │   │   └── images                 # Image assets
+│   │   ├── components                 # Reusable React components
+│   │   │   ├── Cards                  # Card components 
+│   │   │   ├── Inputs                 # Form input components 
+│   │   │   ├── layouts                # Layout components 
+│   │   │   ├── ResumeSections         # Resume section components 
+│   │   │   ├── ResumeTemplates        # Resume template components 
 │   │   │   ├── Modal.jsx
 │   │   │   ├── Progress.jsx
 │   │   │   ├── StepProgress.jsx
 │   │   │   └── Tab.jsx
-│   │   ├── context/                    # React Context providers
-│   │   │   ├── AuthContext.jsx
-│   │   │   └── ResumeContext.jsx
-│   │   ├── pages/                      # Page components
-│   │   │   ├── Auth/                   # Authentication pages
-│   │   │   │   ├── Login.jsx
-│   │   │   │   └── Register.jsx
-│   │   │   ├── Home/                   # Home section
-│   │   │   │   └── Home.jsx
-│   │   │   ├── ResumeUpdate/           # Resume update section
-│   │   │   │   ├── CreateResume.jsx
-│   │   │   │   └── EditResume.jsx
+│   │   ├── context                    # React Context providers 
+│   │   ├── pages/                     # Page components
+│   │   │   ├── Auth                   # Authentication pages 
+│   │   │   ├── Home                   # Home section 
+│   │   │   ├── ResumeUpdate           # Resume update section 
 │   │   │   └── LandingPage.jsx
-│   │   ├── utils/                      # Utility functions
-│   │   │   ├── api.js
-│   │   │   ├── constants.js
-│   │   │   └── helpers.js
+│   │   ├── utils                      # Utility functions 
 │   │   ├── App.jsx
 │   │   ├── main.jsx
 │   │   └── index.css
@@ -62,29 +37,13 @@ A full-stack web application for creating and managing professional resumes onli
 │   └── package.json
 │
 ├── server/                             # Backend Node.js/Express application
-│   ├── config/                         # Configuration files
-│   │   ├── db.js
-│   │   └── config.js
-│   ├── controllers/                    # API controllers
-│   │   ├── authController.js
-│   │   ├── resumeController.js
-│   │   └── userController.js
-│   ├── middlewares/                    # Express middlewares
-│   │   ├── auth.js
-│   │   ├── errorHandler.js
-│   │   └── upload.js
-│   ├── models/                         # Database models
-│   │   ├── Resume.js
-│   │   └── User.js
-│   ├── routes/                         # API routes
-│   │   ├── auth.js
-│   │   ├── resume.js
-│   │   └── user.js
-│   ├── uploads/                        # File upload directory
-│   │   └── images-1.png                # uploaded image
-│   ├── utils/                          # Utility functions
-│   │   ├── validation.js
-│   │   └── helpers.js
+│   ├── config                         # Configuration files
+│   ├── controllers                    # API controllers 
+│   ├── middlewares                    # Express middlewares 
+│   ├── models                         # Database models
+│   ├── routes                         # API routes
+│   ├── uploads                        # File upload directory
+│   ├── utils                          # Utility functions
 │   ├── .env
 │   ├── server.js
 │   └── package.json
@@ -317,7 +276,7 @@ POST /api/upload
 
 1. Clone the repository
 ```bash
-git clone [repository-url]
+git clone https://github.com/SatyamGupta32/online-CV-Generator.git
 cd Online-Resume-Maker
 ```
 
